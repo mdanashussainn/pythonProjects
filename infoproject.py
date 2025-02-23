@@ -27,7 +27,7 @@ if ask2 == "yes":
     percentage = []
     num_subjects = int(input("Enter the number of subjects: "))
     for i in range(num_subjects):
-        subject_percentage = float(input(f"Enter percentage for subject {i+1}: "))
+        subject_percentage = input(f"Enter marks of subject {i+1}: ")
         percentage.append(subject_percentage)
     average_percentage = cal_average(percentage)
     print(f"The average percentage is: {average_percentage:.2f}")
